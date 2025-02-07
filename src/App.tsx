@@ -11,6 +11,59 @@ import burgundyImage from "@/assets/burgundy.jpg"
 import casualImage from "@/assets/casual.jpg"
 import blazerImage from "@/assets/blazer.jpg"
 import jeansImage from "@/assets/jeans.jpg"
+import Carousel from "./components/ui/Carousel";
+import slider1 from "@/assets/slider1.png"
+import slider2 from "@/assets/slider2.png";
+import slider3 from "@/assets/slider3.png";
+import slider4 from "@/assets/slider1.png";
+import slider5 from "@/assets/slider2.png";
+import slider6 from "@/assets/slider3.png";
+import Reviews from "./components/ui/Reviews";
+
+const images = [
+  {
+    src: slider1,
+    alt: "Slider 1",
+    title: "First Slide",
+    description: "This is the first slider image.",
+    tags: ["Feature", "Highlight"]
+  },
+  {
+    src: slider2,
+    alt: "Slider 2",
+    title: "Second Slide",
+    description: "This is the second slider image.",
+    tags: ["New", "Trending"]
+  },
+  {
+    src: slider3,
+    alt: "Slider 3",
+    title: "Third Slide",
+    description: "This is the third slider image.",
+    tags: ["Popular", "Recommended"]
+  },
+  {
+    src: slider4,
+    alt: "Slider 4",
+    title: "Third Slide",
+    description: "This is the third slider image.",
+    tags: ["Popular", "Recommended"]
+  },
+  {
+    src: slider5,
+    alt: "Slider 5",
+    title: "Third Slide",
+    description: "This is the third slider image.",
+    tags: ["Popular", "Recommended"]
+  },
+  {
+    src: slider6,
+    alt: "Slider 6",
+    title: "Third Slide",
+    description: "This is the third slider image.",
+    tags: ["Popular", "Recommended"]
+  },
+];
 
 
 const App: React.FC = () => {
@@ -364,7 +417,7 @@ const App: React.FC = () => {
           <h1 className="text-3xl font-extrabold">New Collection</h1>                
         </div>
       </div>
-      {/* Ukuran gambar 320x380px | tambahkan teks di paling depan layer gambar| ubah gambar*/}
+      {/* Ukuran gambar 320x380px | tambahkan teks di paling depan layer gambar| ubah gambar | Ubah dari grid menjadi flex grow*/}
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
           <div className="grid grid-cols-3 sm:grid-cols-4 mx-5 gap-2">
             <div className="flex justify-center col-span-2 ">
@@ -384,8 +437,7 @@ const App: React.FC = () => {
 
       {/* end section 7 */}
 
-      {/* Section 8 */}
-
+      {/* Section 8 SHIPPING */}
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
           <div className="text-black font-[Nunito]">
             <h1 className="text-3xl font-extrabold">
@@ -394,38 +446,37 @@ const App: React.FC = () => {
           </div>
       </div>
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
-          <div className="grid sm:grid-cols-4 mx-auto gap-6">
-            <div className="flex justify-center">
-              <div className="bg-white dark:bg-secondary mx-auto text-center">
-                <MdLocalShipping className="text-6xl mx-auto" />
-                <span className="inline-block">Free Shipping</span>
-                <span className="inline-block">Free shipping for order above 5000 IDR</span>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-white dark:bg-secondary mx-auto text-center">
-                <FaSackDollar className="text-6xl mx-auto" />
-                <span className="inline-block">Money Guarantee</span>
-                <span className="inline-block">Within 30 days for an exchange</span>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-white dark:bg-secondary mx-auto text-center">
-                <MdHeadset className="text-6xl mx-auto" />
-                <span className="inline-block">Online Support</span>
-                <span className="inline-block">24 hours a day, 7 days a week</span>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-white dark:bg-secondary mx-auto text-center">
-                <MdPayment className="text-6xl mx-auto" />
-                <span className="inline-block">Flexible Payment</span>
-                <span className="inline-block">Pay with multiple credit cards</span>
-              </div>
+        <div className="grid sm:grid-cols-4 w-full">
+          <div className="flex justify-center w-full">
+            <div className="bg-white dark:bg-secondary text-center w-full">
+              <MdLocalShipping className="text-6xl mx-auto" />
+              <span className="block">Free Shipping</span>
+              <span className="block">Free shipping for order above 5000 IDR</span>
             </div>
           </div>
+          <div className="flex justify-center w-full">
+            <div className="bg-white dark:bg-secondary text-center w-full">
+              <FaSackDollar className="text-6xl mx-auto" />
+              <span className="block">Money Guarantee</span>
+              <span className="block">Within 30 days for an exchange</span>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <div className="bg-white dark:bg-secondary text-center w-full">
+              <MdHeadset className="text-6xl mx-auto" />
+              <span className="block">Online Support</span>
+              <span className="block">24 hours a day, 7 days a week</span>
+            </div>
+          </div>
+          <div className="flex justify-center w-full">
+            <div className="bg-white dark:bg-secondary text-center w-full">
+              <MdPayment className="text-6xl mx-auto" />
+              <span className="block">Flexible Payment</span>
+              <span className="block">Pay with multiple credit cards</span>
+            </div>
+          </div>
+        </div>
       </div>
-
       {/* End Section 8 */}
 
       {/* Section 9 Slider | Edit Gambar dan jumlah */}
@@ -436,84 +487,22 @@ const App: React.FC = () => {
             </h1>                
           </div>
       </div>
-
-      <div className="carousel w-full">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" className="btn btn-circle">❮</a>
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide2" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" className="btn btn-circle">❮</a>
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" className="btn btn-circle">❮</a>
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide4" className="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      className="w-full" />
-    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" className="btn btn-circle">❮</a>
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
+      {/* edit ukuran gambar 240x180 | Edit button scrollnya | kenapa harus declare 2x imagenya */}
+      <div className="flex justify-center items-center min-h-fit bg-stone-300">
+      <Carousel images={images} />
       </div>
 
       {/* End Section 9 Slider */}
 
       {/* Section 10 Top review */}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 dark:bg-gray-800">
           <div className="text-black font-[Nunito]">
-            <h1 className="text-3xl font-extrabold">
+            <h1 className="text-3xl font-extrabold text-white">
                 Top Reviews
             </h1>                
           </div>
       </div>
-      <div className="carousel w-full">
-  <div id="item1" className="carousel-item w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-      className="w-full" />
-  </div>
-  <div id="item2" className="carousel-item w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-      className="w-full" />
-  </div>
-  <div id="item3" className="carousel-item w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-      className="w-full" />
-  </div>
-  <div id="item4" className="carousel-item w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      className="w-full" />
-  </div>
-      </div>
-      <div className="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" className="btn btn-xs">1</a>
-        <a href="#item2" className="btn btn-xs">2</a>
-        <a href="#item3" className="btn btn-xs">3</a>
-        <a href="#item4" className="btn btn-xs">4</a>
-      </div>
+      <Reviews />
       {/* END Section 10 Top review */}
 
       {/* Footer jadikan components */}
