@@ -97,17 +97,20 @@ const App: React.FC = () => {
         </div>
       </div>
 
+      {/* Semua card */}
       <div className="flex justify-center items-center bg-stone-300">
       <div className="grid sm:grid-cols-4 mx-auto gap-6">
+
         {/* card 1 */}
 
-        <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
+        <figure className="w-full">
           <img
             src={burgundyImage}
-            alt="Shoes" />
+            alt="Shoes" 
+            className="size-60 object-cover rounded-t-xl" />
         </figure>
-        <div className="card-body">
+        <div className="card-body p-5">
           <h2 className="card-title">
             Shoes!
             <div className="badge badge-secondary">NEW</div>
@@ -123,13 +126,14 @@ const App: React.FC = () => {
         {/* end card 1 */}
         {/* card 2 */}
 
-        <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
+        <figure className="w-full">
           <img
             src={casualImage}
-            alt="Shoes" />
+            alt="Shoes" 
+            className="size-60 object-cover rounded-t-xl" />
         </figure>
-        <div className="card-body">
+        <div className="card-body p-5">
           <h2 className="card-title">
             Shoes!
             <div className="badge badge-secondary">NEW</div>
@@ -145,13 +149,14 @@ const App: React.FC = () => {
         {/* end card 2 */}
         {/* card 3 */}
 
-        <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
+        <figure className="w-full">
           <img
             src={blazerImage}
-            alt="Shoes" />
+            alt="Shoes" 
+            className="size-60 object-cover rounded-t-xl" />
         </figure>
-        <div className="card-body">
+        <div className="card-body p-5">
           <h2 className="card-title">
             Shoes!
             <div className="badge badge-secondary">NEW</div>
@@ -167,13 +172,14 @@ const App: React.FC = () => {
         {/* end card 3 */}
         {/* card 4 */}
 
-        <div className="card bg-base-100 w-96 shadow-xl">
-        <figure>
+        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
+        <figure className="w-full">
           <img
             src={jeansImage}
-            alt="Shoes" />
+            alt="Shoes" 
+            className="size-60 object-cover rounded-t-xl" />
         </figure>
-        <div className="card-body">
+        <div className="card-body p-5">
           <h2 className="card-title">
             Shoes!
             <div className="badge badge-secondary">NEW</div>
@@ -190,7 +196,7 @@ const App: React.FC = () => {
 
       </div>
       </div>
-
+      {/* End Section 3 */}
     </>
   );
 };
