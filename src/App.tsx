@@ -11,6 +11,15 @@ import burgundyImage from "@/assets/burgundy.jpg"
 import casualImage from "@/assets/casual.jpg"
 import blazerImage from "@/assets/blazer.jpg"
 import jeansImage from "@/assets/jeans.jpg"
+import nsfm1 from "@/assets/nsfm1.jpg"
+import nsfm2 from "@/assets/nsfm2.jpg"
+import nsfm3 from "@/assets/nsfm3.jpg"
+import nsfm4 from "@/assets/nsfm4.png"
+import jumbos5 from "@/assets/jumbos5.png"
+import obs1 from "@/assets/obs1.png"
+import obs2 from "@/assets/obs2.png"
+import obs3 from "@/assets/obs3.png"
+import obs4 from "@/assets/obs4.png"
 import Carousel from "./components/ui/Carousel";
 import slider1 from "@/assets/slider1.png"
 import slider2 from "@/assets/slider2.png";
@@ -271,7 +280,7 @@ const App: React.FC = () => {
         <div className="card bg-base-100 w-60 mx-auto shadow-xl">
         <figure className="w-full">
           <img
-            src={burgundyImage}
+            src={nsfm1}
             alt="Shoes" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
@@ -294,7 +303,7 @@ const App: React.FC = () => {
         <div className="card bg-base-100 w-60 mx-auto shadow-xl">
         <figure className="w-full">
           <img
-            src={casualImage}
+            src={nsfm2}
             alt="Shoes" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
@@ -317,7 +326,7 @@ const App: React.FC = () => {
         <div className="card bg-base-100 w-60 mx-auto shadow-xl">
         <figure className="w-full">
           <img
-            src={blazerImage}
+            src={nsfm3}
             alt="Shoes" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
@@ -340,7 +349,7 @@ const App: React.FC = () => {
         <div className="card bg-base-100 w-60 mx-auto shadow-xl">
         <figure className="w-full">
           <img
-            src={jeansImage}
+            src={nsfm4}
             alt="Shoes" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
@@ -377,7 +386,7 @@ const App: React.FC = () => {
                 <button className="btn dark:btn-neutral btn-sm rounded-xl">Shop workwear</button>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${jumbosImage})` }} className="bg-center bg-cover bg-no-repeat size-[24rem]"></div>
+            <div style={{ backgroundImage: `url(${jumbos5})` }} className="bg-center bg-cover bg-no-repeat size-[24rem]"></div>
             </div>
           </div>
         </div>
@@ -394,16 +403,16 @@ const App: React.FC = () => {
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
           <div className="grid sm:grid-cols-4 mx-auto gap-6">
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${menImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs1})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${womenImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs2})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${kidImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs3})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${coupleImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs4})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
           </div>
         </div>
