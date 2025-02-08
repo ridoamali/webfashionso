@@ -24,7 +24,7 @@ const Carousel: React.FC<CarouselProps> = ({ images = [] }) => {
     };
   return (
     <div className="relative">
-      <div className="carousel carousel-center bg-neutral rounded-box max-w-md sm:max-w-screen-lg space-x-4 p-4">
+      <div className="carousel carousel-center bg-neutral rounded-box max-w-[25rem] sm:max-w-screen-lg space-x-4 p-4">
         {images.length > 0 ? (
           images.map((image, index) => (
             <div 

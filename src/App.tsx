@@ -1,33 +1,32 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/ui/Navbar";
+import Jumbotron from "./components/ui/Jumbotron";
 import { MdLocalShipping, MdHeadset, MdPayment } from "react-icons/md";
 import { FaSackDollar } from "react-icons/fa6";
-import menImage from "@/assets/men.jpeg"
-import jumbosImage from "@/assets/jumbos.png"
-import womenImage from "@/assets/women.png"
-import kidImage from "@/assets/kid.jpg"
-import coupleImage from "@/assets/couple.jpeg"
-import burgundyImage from "@/assets/burgundy.jpg"
-import casualImage from "@/assets/casual.jpg"
-import blazerImage from "@/assets/blazer.jpg"
-import jeansImage from "@/assets/jeans.jpg"
-import nsfm1 from "@/assets/nsfm1.jpg"
-import nsfm2 from "@/assets/nsfm2.jpg"
-import nsfm3 from "@/assets/nsfm3.jpg"
-import nsfm4 from "@/assets/nsfm4.png"
-import jumbos5 from "@/assets/jumbos5.png"
-import obs1 from "@/assets/obs1.png"
-import obs2 from "@/assets/obs2.png"
-import obs3 from "@/assets/obs3.png"
-import obs4 from "@/assets/obs4.png"
+import nsfm1 from "@/assets/nsfm1.jpg";
+import nsfm2 from "@/assets/nsfm2.jpg";
+import nsfm3 from "@/assets/nsfm3.jpg";
+import nsfm4 from "@/assets/nsfm4.png";
+import jumbos5 from "@/assets/jumbos5.png";
+import obs1 from "@/assets/obs1.png";
+import obs2 from "@/assets/obs2.png";
+import obs3 from "@/assets/obs3.png";
+import obs4 from "@/assets/obs4.png";
+import nc1 from "@/assets/nc1.jpg";
+import nc2 from "@/assets/nc2.jpg";
+import nc3 from "@/assets/nc3.jpg";
+import nc4 from "@/assets/nc4.jpg";
 import Carousel from "./components/ui/Carousel";
-import slider1 from "@/assets/slider1.png"
-import slider2 from "@/assets/slider2.png";
-import slider3 from "@/assets/slider3.png";
-import slider4 from "@/assets/slider1.png";
-import slider5 from "@/assets/slider2.png";
-import slider6 from "@/assets/slider3.png";
+import slider1 from "@/assets/slider1.jpeg";
+import slider2 from "@/assets/slider2.jpg";
+import slider3 from "@/assets/slider3.jpg";
+import slider4 from "@/assets/slider4.jpg";
+import slider5 from "@/assets/slider5.jpg";
+import slider6 from "@/assets/slider6.png";
 import Reviews from "./components/ui/Reviews";
+import Category from "./components/ui/Category";
+import Women from "./components/ui/Women";
+
 
 const images = [
   {
@@ -96,172 +95,11 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Navbar></Navbar>
-      {/* end of navbar */}
-      {/* section jumbotron */}
-        <div className="min-h-fit min-w-fit flex justify-center items-center bg-stone-300">
-          <div className="grid sm:grid-cols-3 mx-auto">
-            <div className="text-center">
-              <div className="text-black font-[Nunito]">
-                Sale up to
-                <h1 className="text-6xl font-extrabold">
-                  50%
-                </h1>
-                On selected items
-                </div>
-            </div>
-            <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${jumbosImage})` }} className="bg-center bg-cover bg-no-repeat size-[24rem]"></div>
-            </div>
-            <div className=" font-[Nunito] text-center">
-              <div className="text-black text-2xl font-semibold py-2">Elegance starts here discover the beauty of local fashion</div>
-              <div className="text-black text-base pb-2">Discover a curated selection like never before with our powerful searching feature now available in your area </div>
-              
-              <button className="btn dark:btn-neutral btn-wide rounded-full">Discover now</button>
-            </div>
-          </div>
-        </div>
-      {/* end section jumbotron */}
-
-      {/* section 2 */}
+      <Navbar />
+      <Jumbotron />
+      <Category />
+      <Women />
       
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
-              <div className="text-black font-[Nunito]">
-                <h1 className="text-3xl font-extrabold">
-                Shop By Category
-                </h1>                
-                </div>
-            </div>
-      
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
-          <div className="grid sm:grid-cols-4 mx-auto gap-6">
-            <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${menImage})` }} className="bg-cover bg-no-repeat w-80 h-[380px] mx-auto rounded-3xl shadow-xl"></div>
-            </div>
-            <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${womenImage})` }} className="bg-cover bg-no-repeat w-80 h-[380px] mx-auto rounded-3xl shadow-xl"></div>
-            </div>
-            <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${kidImage})` }} className="bg-cover bg-no-repeat w-80 h-[380px] mx-auto rounded-3xl shadow-xl"></div>
-            </div>
-            <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${coupleImage})` }} className="bg-cover bg-no-repeat w-80 h-[380px] mx-auto rounded-3xl shadow-xl"></div>
-            </div>
-          </div>
-        </div>
-
-      {/* end section 2 */}
-      
-      {/* Section 3 */}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
-        <div className="text-black font-[Nunito]">
-          <h1 className="text-3xl font-extrabold">
-              New Sale for Women
-          </h1>                
-        </div>
-      </div>
-      {/* EDIT SEMUA UKURAN PIXEL GAMBAR MENJADI SAMA DAN PAS DI TENGAH */}
-      {/* Semua card */}
-      <div className="flex justify-center items-center bg-stone-300">
-      <div className="grid sm:grid-cols-4 mx-auto gap-6">
-
-        {/* card 1 */}
-
-        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
-        <figure className="w-full">
-          <img
-            src={burgundyImage}
-            alt="Shoes" 
-            className="size-60 object-cover rounded-t-xl" />
-        </figure>
-        <div className="card-body p-5">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
-          </div>
-        </div>
-        </div>
-
-        {/* end card 1 */}
-        {/* card 2 */}
-
-        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
-        <figure className="w-full">
-          <img
-            src={casualImage}
-            alt="Shoes" 
-            className="size-60 object-cover rounded-t-xl" />
-        </figure>
-        <div className="card-body p-5">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
-          </div>
-        </div>
-        </div>
-
-        {/* end card 2 */}
-        {/* card 3 */}
-
-        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
-        <figure className="w-full">
-          <img
-            src={blazerImage}
-            alt="Shoes" 
-            className="size-60 object-cover rounded-t-xl" />
-        </figure>
-        <div className="card-body p-5">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
-          </div>
-        </div>
-        </div>
-
-        {/* end card 3 */}
-        {/* card 4 */}
-
-        <div className="card bg-base-100 w-60 mx-auto shadow-xl">
-        <figure className="w-full">
-          <img
-            src={jeansImage}
-            alt="Shoes" 
-            className="size-60 object-cover rounded-t-xl" />
-        </figure>
-        <div className="card-body p-5">
-          <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
-          </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
-          </div>
-        </div>
-        </div>
-
-        {/* end card 4 */}
-
-      </div>
-      </div>
-      {/* End Section 3 */}
-
       {/* Section 4 */}
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
         <div className="text-black font-[Nunito]">
@@ -430,16 +268,16 @@ const App: React.FC = () => {
       <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
           <div className="grid grid-cols-3 sm:grid-cols-4 mx-5 gap-2">
             <div className="flex justify-center col-span-2 ">
-            <div style={{ backgroundImage: `url(${menImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${nc1})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${womenImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${nc2})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${kidImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${nc3})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center col-span-2">
-            <div style={{ backgroundImage: `url(${coupleImage})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${nc4})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
           </div>
         </div>
