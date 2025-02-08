@@ -1,4 +1,3 @@
-import React from 'react'
 import jumbosImage from "@/assets/jumbos.png";
 
 function Jumbotron() {
