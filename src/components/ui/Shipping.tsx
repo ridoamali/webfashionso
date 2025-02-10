@@ -5,14 +5,7 @@ function Shipping() {
   return (
     <>
           {/* Section 8 SHIPPING */}
-          <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
-          <div className="text-black font-[Nunito]">
-            <h1 className="text-3xl font-extrabold">
-                DIISI SHIPPING
-            </h1>                
-          </div>
-      </div>
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 py-5">
         <div className="grid sm:grid-cols-4 w-full">
           <div className="flex justify-center w-full">
             <div className="bg-white dark:bg-secondary text-center w-full">

@@ -7,7 +7,7 @@ function Women() {
   return (
     <>
           {/* Section 3 */}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 py-5">
         <div className="text-black font-[Nunito]">
           <h1 className="text-3xl font-extrabold">
               New Sale for Women

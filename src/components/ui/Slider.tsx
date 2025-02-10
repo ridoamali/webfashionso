@@ -56,7 +56,7 @@ function Slider() {
   return (
     <>
           {/* Section 9 Slider | Edit Gambar dan jumlah */}
-          <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+          <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pb-5">
           <div className="text-black font-[Nunito]">
             <h1 className="text-3xl font-extrabold">
                 More To Shop
@@ -64,7 +64,7 @@ function Slider() {
           </div>
       </div>
       {/* edit ukuran gambar 240x180 | Edit button scrollnya | kenapa harus declare 2x imagenya */}
-      <div className="flex justify-center items-center min-h-fit bg-stone-300">
+      <div className="flex justify-center items-center min-h-fit bg-stone-300 pb-5">
       <Carousel images={images} />
       </div>
 

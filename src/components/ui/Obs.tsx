@@ -8,7 +8,7 @@ function Obs() {
     <>
           {/* section 6 */}
       
-          <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pb-5">
         <div className="text-black font-[Nunito]">
           <h1 className="text-3xl font-extrabold">Our Best Sellers</h1>                
         </div>

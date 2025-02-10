@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "./components/ui/Navbar";
 import Jumbotron from "./components/ui/Jumbotron";
 import Reviews from "./components/ui/Reviews";
-import Category from "./components/ui/Category";
+import ShopByCategory from "./components/ui/ShopByCategory";
 import Women from "./components/ui/Women";
 import Men from "./components/ui/Men";
 import Jumbotron2 from "./components/ui/Jumbotron2";
@@ -37,7 +37,7 @@ const App: React.FC = () => {
     <>
       <Navbar />
       <Jumbotron />
-      <Category />
+      <ShopByCategory />
       <Women />
       <Men />
       <Jumbotron2 />
