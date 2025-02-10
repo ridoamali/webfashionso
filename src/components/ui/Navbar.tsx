@@ -1,37 +1,37 @@
-function Navbar() {
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Menu, Search, ShoppingCart, User } from "lucide-react";
+
+export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
   return (
   <div className="navbar bg-base-100 dark:text-white transition-all">
   <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Men</a></li>
-        <li>
-          <a>Women</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+        <div className="flex items-center gap-4">
+          {/* Mobile Menu Button */}
+          <Menu
+            className="w-6 h-6 cursor-pointer md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+        </div>
+        {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="md:hidden bg-white shadow-md py-4 absolute w-52 rounded-box mt-3 left-0 top-14"
+        >
+          <ul className="flex flex-col items-center gap-4 text-gray-700">
+            <li className="hover:text-black cursor-pointer">Home</li>
+            <li className="hover:text-black cursor-pointer">Shop</li>
+            <li className="hover:text-black cursor-pointer">About</li>
+            <li className="hover:text-black cursor-pointer">Contact</li>
           </ul>
-        </li>
-        <li><a>Couples</a></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+        </motion.div>
+      )}
+
+<a className="btn btn-ghost text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -48,11 +48,11 @@ function Navbar() {
       <li><a>Couple</a></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-4">
+    <Search className="w-5 h-5 cursor-pointer" />
+    <ShoppingCart className="w-5 h-5 cursor-pointer" />
+    <User className="w-5 h-5 cursor-pointer" />
   </div>
 </div>
   )
 }
-
-export default Navbar
