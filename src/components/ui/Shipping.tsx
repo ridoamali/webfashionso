@@ -5,34 +5,34 @@ function Shipping() {
   return (
     <>
           {/* Section 8 SHIPPING */}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 py-5">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 dark:bg-secondary py-5 md:py-10">
         <div className="grid sm:grid-cols-4 w-full">
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full mb-5">
             <div className="bg-white dark:bg-secondary text-center w-full">
-              <MdLocalShipping className="text-6xl mx-auto" />
-              <span className="block">Free Shipping</span>
-              <span className="block">Free shipping for order above 5000 IDR</span>
+              <MdLocalShipping className="text-4xl mx-auto" />
+              <span className="block text-xl font-semibold">Free Shipping</span>
+              <span className="block text-xs font-thin">Free shipping for order above 5000 IDR</span>
             </div>
           </div>
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full mb-5">
             <div className="bg-white dark:bg-secondary text-center w-full">
-              <FaSackDollar className="text-6xl mx-auto" />
-              <span className="block">Money Guarantee</span>
-              <span className="block">Within 30 days for an exchange</span>
+              <FaSackDollar className="text-4xl mx-auto" />
+              <span className="block text-xl font-semibold">Money Guarantee</span>
+              <span className="block text-xs font-thin">Within 30 days for an exchange</span>
             </div>
           </div>
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full mb-5">
             <div className="bg-white dark:bg-secondary text-center w-full">
-              <MdHeadset className="text-6xl mx-auto" />
-              <span className="block">Online Support</span>
-              <span className="block">24 hours a day, 7 days a week</span>
+              <MdHeadset className="text-4xl mx-auto" />
+              <span className="block text-xl font-semibold">Online Support</span>
+              <span className="block text-xs font-thin">24 hours a day, 7 days a week</span>
             </div>
           </div>
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full mb-5">
             <div className="bg-white dark:bg-secondary text-center w-full">
-              <MdPayment className="text-6xl mx-auto" />
-              <span className="block">Flexible Payment</span>
-              <span className="block">Pay with multiple credit cards</span>
+              <MdPayment className="text-4xl mx-auto" />
+              <span className="block text-xl font-semibold">Flexible Payment</span>
+              <span className="block text-xs font-thin">Pay with multiple credit cards</span>
             </div>
           </div>
         </div>

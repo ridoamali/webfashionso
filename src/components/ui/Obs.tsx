@@ -8,25 +8,25 @@ function Obs() {
     <>
           {/* section 6 */}
       
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pb-5">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pt-10 pb-5 md:pb-10">
         <div className="text-black font-[Nunito]">
           <h1 className="text-3xl font-extrabold">Our Best Sellers</h1>                
         </div>
       </div>
       {/* Ukuran gambar 320x380px | tambahkan teks di paling depan layer gambar*/}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 md:pb-10 md:px-20">
           <div className="grid sm:grid-cols-4 mx-auto gap-6">
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${obs1})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs1})` }} className="bg-cover md:bg-center bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${obs2})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs2})` }} className="bg-cover md:bg-center  bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${obs3})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs3})` }} className="bg-cover md:bg-center  bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
             <div className="flex justify-center">
-            <div style={{ backgroundImage: `url(${obs4})` }} className="bg-cover bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
+            <div style={{ backgroundImage: `url(${obs4})` }} className="bg-cover md:bg-center  bg-no-repeat w-80 h-52 md:h-[380px] md:mx-auto rounded-xl shadow-sm"></div>
             </div>
           </div>
         </div>

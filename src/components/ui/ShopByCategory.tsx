@@ -6,13 +6,13 @@ import coupleImage from "@/assets/couple.jpeg";
 const ShopByCategory: React.FC = () => {
   return (
     <>
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pb-5">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 py-5 md:pb-10">
         <div className="text-black font-[Nunito]">
           <h1 className="text-3xl font-extrabold">Shop By Category</h1>
         </div>
       </div>
 
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 md:px-20 md:pb-10">
         <div className="grid sm:grid-cols-4 mx-auto gap-6">
           {[menImage, womenImage, kidImage, coupleImage].map((image, index) => (
             <div

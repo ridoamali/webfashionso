@@ -7,7 +7,7 @@ function Women() {
   return (
     <>
           {/* Section 3 */}
-      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 py-5">
+      <div className="min-h-fit min-w-[384px] flex justify-center items-center bg-stone-300 pt-10 pb-5 md:pb-10">
         <div className="text-black font-[Nunito]">
           <h1 className="text-3xl font-extrabold">
               New Sale for Women
@@ -16,7 +16,7 @@ function Women() {
       </div>
       {/* EDIT SEMUA UKURAN PIXEL GAMBAR MENJADI SAMA DAN PAS DI TENGAH */}
       {/* Semua card */}
-      <div className="flex justify-center items-center bg-stone-300">
+      <div className="flex justify-center items-center bg-stone-300 md:pb-10">
       <div className="grid sm:grid-cols-4 mx-auto gap-6">
 
         {/* card 1 */}
@@ -25,18 +25,18 @@ function Women() {
         <figure className="w-full">
           <img
             src={burgundyImage}
-            alt="Shoes" 
+            alt="Coat" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
         <div className="card-body p-5">
           <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
+            1600 EGP
+            <div className="badge badge-secondary">20% OFF</div>
           </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>Burgundy Trench Coat</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <div className="badge badge-outline">Coat</div>
           </div>
         </div>
         </div>
@@ -48,18 +48,18 @@ function Women() {
         <figure className="w-full">
           <img
             src={casualImage}
-            alt="Shoes" 
+            alt="Jacket" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
         <div className="card-body p-5">
           <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
+            1200 EGP
+            <div className="badge badge-secondary">10% OFF</div>
           </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>Hooded Casual Jacket</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <div className="badge badge-outline">Jacket</div>
           </div>
         </div>
         </div>
@@ -71,18 +71,18 @@ function Women() {
         <figure className="w-full">
           <img
             src={blazerImage}
-            alt="Shoes" 
+            alt="Blazer" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
         <div className="card-body p-5">
           <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
+            1400 EGP
+            <div className="badge badge-secondary">15% OFF</div>
           </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>Black Elegant Blazer</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <div className="badge badge-outline">Blazer</div>
           </div>
         </div>
         </div>
@@ -94,18 +94,18 @@ function Women() {
         <figure className="w-full">
           <img
             src={jeansImage}
-            alt="Shoes" 
+            alt="Jeans" 
             className="size-60 object-cover rounded-t-xl" />
         </figure>
         <div className="card-body p-5">
           <h2 className="card-title">
-            Shoes!
-            <div className="badge badge-secondary">NEW</div>
+            1600 EGP
+            <div className="badge badge-secondary">14% OFF</div>
           </h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <p>Light Jeans Shirt</p>
           <div className="card-actions justify-end">
             <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+            <div className="badge badge-outline">Jeans</div>
           </div>
         </div>
         </div>
